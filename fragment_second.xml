@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <!-- Judul "Login" -->
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_centerHorizontal="true"
+            android:text="Login"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <!-- EditText untuk Username -->
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textSize="13sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:layout_below="@id/txtLogin"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:background="@drawable/rounded_edittext_bg"
+            android:textColorHint="#FFFFFF"
+            android:hint="Username"/>
+
+
+        <!-- EditText untuk Password -->
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:textSize="13sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:background="@drawable/rounded_edittext_bg"
+            android:textColorHint="#FFFFFF"/>
+
+
+        <!-- Tombol Login -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Login"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:textColorHint="#FFFFFF"
+            android:backgroundTint="@color/highlight"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <!-- TextView untuk belum punya akun? -->
+            <TextView
+                android:id="@+id/alreadyHaveAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dont have an account?"
+                android:layout_gravity="center"
+                android:textSize="13sp" />
+
+
+            <Button
+                android:id="@+id/CreateAccountButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:onClick="navigateToLoginActivity"
+                android:text="Register here"
+                android:layout_gravity="center"
+                android:textColor="#0000FF"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
